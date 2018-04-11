@@ -5,23 +5,15 @@
  */
 package tpinterface;
 
-/**
- *
- * @author diginamic09
- */
-public class Bike extends AbstractVehicule{
+public class Car extends AbstractVehicule{
     
-    private Type type;
+    private int volEss, puissance,co2;
     
-    public Bike(Position pos, float speed,float nord, float sud, float ouest, float est,Type type)
-    {
+    public Car(Position pos, float speed,float nord, float sud, float ouest, float est,int volEss,int puiss, int co2){
         super(pos,speed,nord,sud,ouest,est);
-        this.type=type;
-    }
-    
-    public void move()
-    {
+        this.volEss=volEss;
+        this.puissance=puiss;
+        this.co2=co2;
     }
     
 }
-
