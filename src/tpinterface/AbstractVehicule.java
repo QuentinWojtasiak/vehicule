@@ -13,6 +13,14 @@ public abstract class AbstractVehicule implements Vehicule{
     
     private Position pos;
     private float nord, sud ,est ,ouest,speed;
+    private String couleur,marque,modele;
+    
+    public AbstractVehicule(Position pos, float speed,float nord, float sud, float ouest, float est)
+    {
+        this.setSpeed(speed);
+        this.setDirection(nord, sud, ouest, est);
+        
+    }
     
     @Override
     public Position getPosition(){
